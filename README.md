@@ -35,7 +35,7 @@ docker是一个容器,用于对环境的构建,解决开发环境和部署环境
 * docker search mongo 查找镜像文件
 * docker pull mongo:latest 拉取最新镜像文件,
 
-### 容器操作(run,start/stop/restart,kill,rm,pause/unpause,create,exec)
+### 容器操作 (run,start/stop/restart,kill,rm,pause/unpause,create,exec)
 
 * docker run -v /my/own/datadir:/data/db --name mongo -d mongo mongod --smallfiles
 (运行mongo容器。-v参数用来指明数据卷的位置，并以命名为/data/db。--name参数指明容器的名字，-d 表示以后台运行容器并返回容器ID。mongo mongod --smallfiles表示建立mongo镜像的容器并以smallfiles参数执行mongod。)
@@ -45,6 +45,6 @@ docker是一个容器,用于对环境的构建,解决开发环境和部署环境
 
 ### 容器rootfs命令 (commit,cp,diff)
 
-### 本地镜像管理(images,rmi,tag,build,history,save,load,import)
+### 本地镜像管理 (images,rmi,tag,build,history,save,load,import)
 
-### info|version
+### 其他命令 (info,version)
